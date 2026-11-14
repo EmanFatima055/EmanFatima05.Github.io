@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover The Beauty Edit — your destination for modern beauty, skincare and makeup essentials.">
+
+    <title>The Beauty Edit | Beauty, Beyond Ordinary</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Complimentary delivery on orders over Rs. 5,000</p>
+    </div>
+
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+
+        <a href="#home" class="brand-logo">
+            THE BEAUTY EDIT
+            <span>BEAUTY, BEYOND ORDINARY</span>
+        </a>
+
+        <nav class="main-nav" id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">Our Story</a>
+            <a href="#bestsellers">Bestsellers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-button" id="search-button" aria-label="Search">
+                Search
+            </button>
+
+            <button class="cart-button" id="cart-button">
+                Bag (<span id="cart-count">0</span>)
+            </button>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">THE ART OF EVERYDAY BEAUTY</p>
+
+                <h1>
+                    Your Beauty.
+                    <span>Your Rules.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover beauty essentials designed to celebrate
+                    your individuality, confidence and natural glow.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#shop" class="btn btn-primary">
+                        Explore Collection
+                    </a>
+
+                    <a href="#about" class="text-link">
+                        Discover Our Story →
+                    </a>
+
+                </div>
+
+                <p class="hero-note">A little luxury, a lot of confidence.</p>
+
+            </div>
+
+            <div class="hero-image">
+
+              
+<img
+    src="https://images.unsplash.com/photo-1653784097013-786a8965ea3b?auto=format&fit=crop&w=1000&q=85"
+    alt="Luxury cosmetics collection"
+/>
+
+                >
+
+                <div class="image-caption">
+                    <span>01 / THE BEAUTY EDIT</span>
+                    <p>Beauty starts with you.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Categories Section -->
+        <section class="categories-section" id="shop">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE OUR WORLD</p>
+                <h2>Find Your Beauty Ritual</h2>
+                <p>Thoughtfully selected essentials for every version of you.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#bestsellers" class="category-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=85"
+                        alt="Makeup collection"
+                    >
+                    <div class="category-info">
+                        <h3>Makeup</h3>
+                        <span>Explore Collection →</span>
+                    </div>
+                </a>
+
+                <a href="#bestsellers" class="category-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=85"
+                        alt="Skincare collection"
+                    >
+                    <div class="category-info">
+                        <h3>Skincare</h3>
+                        <span>Explore Collection →</span>
+                    </div>
+                </a>
+
+                <a href="#bestsellers" class="category-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=85"
+                        alt="Beauty essentials"
+                    >
+                    <div class="category-info">
+                        <h3>Beauty Essentials</h3>
+                        <span>Explore Collection →</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Bestsellers Section -->
+        <section class="products-section" id="bestsellers">
+
+            <div class="section-heading">
+                <p class="eyebrow">THE COMMUNITY FAVOURITES</p>
+                <h2>Our Bestsellers</h2>
+                <p>The beauty essentials everyone is talking about.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card" data-category="makeup">
+
+                    <div class="product-image">
+                        <span class="product-badge">BESTSELLER</span>
+
+                        <button class="wishlist-button" aria-label="Add Radiance Lip Tint to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=650&q=85"
+                            alt="Radiance lip tint"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">LIPS</p>
+                        <h3>Radiance Lip Tint</h3>
+                        <p class="product-price">Rs. 1,850</p>
+
+                        <button class="add-to-cart" data-name="Radiance Lip Tint" data-price="1850">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="makeup">
+
+                    <div class="product-image">
+                        <span class="product-badge">NEW</span>
+
+                        <button class="wishlist-button" aria-label="Add Velvet Glow Blush to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=650&q=85"
+                            alt="Velvet glow blush"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">FACE</p>
+                        <h3>Velvet Glow Blush</h3>
+                        <p class="product-price">Rs. 2,250</p>
+
+                        <button class="add-to-cart" data-name="Velvet Glow Blush" data-price="2250">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="skincare">
+
+                    <div class="product-image">
+
+                        <button class="wishlist-button" aria-label="Add Daily Dew Serum to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=650&q=85"
+                            alt="Daily dew serum"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">SKINCARE</p>
+                        <h3>Daily Dew Serum</h3>
+                        <p class="product-price">Rs. 3,200</p>
+
+                        <button class="add-to-cart" data-name="Daily Dew Serum" data-price="3200">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="skincare">
+
+                    <div class="product-image">
+
+                        <span class="product-badge">POPULAR</span>
+
+                        <button class="wishlist-button" aria-label="Add Soft Touch Cream to wishlist">
+                            ♡
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=650&q=85"
+                            alt="Soft touch cream"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">SKINCARE</p>
+                        <h3>Soft Touch Cream</h3>
+                        <p class="product-price">Rs. 2,750</p>
+
+                        <button class="add-to-cart" data-name="Soft Touch Cream" data-price="2750">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Brand Story -->
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=85"
+                    alt="Beautifully arranged beauty products"
+                >
+            </div>
+
+            <div class="about-content">
+
+                <p class="eyebrow">A NOTE FROM OUR WORLD</p>
+
+                <h2>Beauty Is Not About Changing Who You Are.</h2>
+
+                <p>
+                    At The Beauty Edit, we believe beauty is personal.
+                    Our vision is to bring together thoughtfully selected
+                    beauty essentials that inspire confidence and
+                    celebrate your individuality.
+                </p>
+
+                <a href="#contact" class="btn btn-primary">
+                    Get To Know Us
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose Us -->
+        <section class="features-section">
+
+            <div class="section-heading">
+                <p class="eyebrow">THE BEAUTY EDIT PROMISE</p>
+                <h2>A Better Beauty Experience</h2>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <span>✧</span>
+                    <h3>Curated Selection</h3>
+                    <p>Beauty essentials selected with care.</p>
+                </div>
+
+                <div class="feature-item">
+                    <span>♡</span>
+                    <h3>Made For You</h3>
+                    <p>Beauty that celebrates individuality.</p>
+                </div>
+
+                <div class="feature-item">
+                    <span>✦</span>
+                    <h3>Beautiful Experience</h3>
+                    <p>Every detail designed with love.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reviews -->
+        <section class="reviews-section" id="reviews">
+
+            <div class="section-heading">
+                <p class="eyebrow">KIND WORDS</p>
+                <h2>The Beauty Edit Community</h2>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>
+                    "A beautiful collection and such a lovely shopping experience.
+                    I absolutely love the presentation!"
+                </p>
+                <h3>— A Happy Customer</h3>
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+
+            <p class="eyebrow">A LITTLE BEAUTY IN YOUR INBOX</p>
+
+            <h2>Stay In The Beauty Loop</h2>
+
+            <p>Discover new arrivals, beauty inspiration and exclusive updates.</p>
+
+            <form class="newsletter-form" id="newsletter-form">
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="Enter your email address"
+                    aria-label="Email address"
+                    required
+                >
+
+                <button type="submit">Subscribe →</button>
+
+            </form>
+
+            <p id="newsletter-message" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+
+        <div class="footer-brand">
+            <a href="#home" class="brand-logo">
+                THE BEAUTY EDIT
+                <span>BEAUTY, BEYOND ORDINARY</span>
+            </a>
+
+            <p>Celebrate your beauty. Define your own rules.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#shop">Shop</a>
+            <a href="#about">Our Story</a>
+            <a href="#bestsellers">Bestsellers</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Get In Touch</h3>
+            <a href="mailto:hello@thebeautyedit.example">Email Us</a>
+            <a href="#contact">Customer Support</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 The Beauty Edit. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
