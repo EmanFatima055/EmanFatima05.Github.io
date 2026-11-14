@@ -187,3 +187,98 @@ newsletterForm.addEventListener("submit", function(event) {
     newsletterForm.reset();
 
 });
+
+/* =====================================
+   PREMIUM SCROLL REVEAL ANIMATIONS
+===================================== */
+
+// Select elements to animate
+
+const revealElements = document.querySelectorAll(
+    ".categories-section .section-heading, " +
+    ".category-card, " +
+    ".products-section .section-heading, " +
+    ".product-card, " +
+    ".about-image, " +
+    ".about-content, " +
+    ".features-section .section-heading, " +
+    ".feature-item, " +
+    ".reviews-section .section-heading, " +
+    ".review-card, " +
+    ".newsletter-section > *"
+);
+
+
+// Add reveal classes and stagger delays
+
+revealElements.forEach(function(element, index) {
+
+    element.classList.add("reveal");
+
+    // Animate cards one after another
+    const parent = element.parentElement;
+
+    if (
+        parent &&
+        (
+            parent.classList.contains("category-grid") ||
+            parent.classList.contains("product-grid") ||
+            parent.classList.contains("features-grid")
+        )
+    ) {
+        const cardIndex = Array.from(parent.children).indexOf(element);
+
+        element.style.setProperty(
+            "--reveal-delay",
+            (cardIndex * 150) + "ms"
+        );
+    }
+
+});
+
+
+// Detect elements entering the screen
+
+if ("IntersectionObserver" in window) {
+
+    const revealObserver = new IntersectionObserver(
+        function(entries, observer) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("is-visible");
+
+                    // Stop observing after animation
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px"
+        }
+    );
+
+
+    revealElements.forEach(function(element) {
+
+        revealObserver.observe(element);
+
+    });
+
+} else {
+
+    // Fallback for older browsers
+
+    revealElements.forEach(function(element) {
+
+        element.classList.add("is-visible");
+
+    });
+
+}
