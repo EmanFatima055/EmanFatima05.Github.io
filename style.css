@@ -997,3 +997,63 @@ img {
     }
 
 }
+
+/* =================================
+   PREMIUM SCROLL ANIMATIONS
+================================= */
+
+/* Scroll reveal initial state */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+/* Visible state */
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Gentle luxury glow on hero image */
+
+.hero-image {
+    animation:
+        fadeUp 1.2s ease both,
+        heroGlow 6s ease-in-out 1.2s infinite;
+}
+
+@keyframes heroGlow {
+    0%, 100% {
+        box-shadow: 0 5px 18px rgba(169, 111, 122, 0.05);
+    }
+
+    50% {
+        box-shadow: 0 15px 38px rgba(169, 111, 122, 0.19);
+    }
+}
+
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero-image {
+        animation: none;
+    }
+
+}
